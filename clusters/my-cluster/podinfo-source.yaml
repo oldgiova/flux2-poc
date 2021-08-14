@@ -18,6 +18,6 @@ metadata:
 spec:
   interval: 30s
   ref:
-    branch: feature/*
+    semver: ">=0.0.0"
   url: https://github.com/rgiovanardi/flux2-poc
 
