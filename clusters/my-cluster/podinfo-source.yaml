@@ -18,6 +18,6 @@ metadata:
 spec:
   interval: 30s
   ref:
-    branch: feature/*
+    branch: "feature/my-first"
   url: https://github.com/rgiovanardi/flux2-poc
 
