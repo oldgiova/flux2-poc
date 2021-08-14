@@ -1,0 +1,11 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: podinfo-feature-y
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: feature-y
+  url: https://github.com/rgiovanardi/flux2-poc
