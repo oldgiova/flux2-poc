@@ -14,3 +14,13 @@ flux create source git podinfo \
   --interval=30s \
   --export > ./clusters/my-cluster/podinfo-source.yaml
 ```
+
+# Add helmrelease
+```
+flux create helmrelease podinfo \
+  --source=GitRepository/podinfo \
+  --interval=1m \
+  --chart=./charts/podinfo \
+  --create-target-namespace \
+  --export > ./clusters/my-cluster/podinfo-helmrelease.yaml
+```
