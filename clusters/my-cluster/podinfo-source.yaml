@@ -20,4 +20,14 @@ spec:
   ref:
     semver: ">=0.0.0"
   url: https://github.com/rgiovanardi/flux2-poc
-
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: podinfo-feature-x
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: feature-x
+  url: https://github.com/rgiovanardi/flux2-poc
